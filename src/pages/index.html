@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webpack starter kit</title>
+  <title>Akademia Sportowa UKS "Wilga"</title>
   <meta name="description" content="Your project description" />
   <!-- Title -->
   <meta property="og:title" content="" />
@@ -25,10 +25,25 @@
 </head>
 
 <body>
-  <div class="hello">
-    <h1>HELLO</h1>
-    <img class="hello__logo" src="../assets/img/logo.svg" alt="name " />
-    <span class="hello__circles"></span>
+  <div class="navigation">
+    <img src="../assets/img/logo_male.svg" alt="Logo UKS WIlga" class="navigation__logo">
+    <button class="navigation__hamburger" id="hamburger">
+      <img src="../assets/icons/bars.svg" alt="hamburger menu icon bars" class="bars">
+      <img src="../assets/icons/close.svg" alt="hamburger menu icon close" class="close hide">
+    </button>
+    <ul class="navigation__list" id="nav-ul">
+      <li class="navigation__item"><a class="navigation__item-link" href="#home">o nas</a></li>
+      <li class="navigation__item"><a class="navigation__item-link" href="#about">aktualności</a></li>
+      <li class="navigation__item"><a class="navigation__item-link" href="#publications">Pływanie</a></li>
+      <li class="navigation__item"><a class="navigation__item-link" href="#blog">Piłka nożna</a></li>
+      <li class="navigation__item"><a class="navigation__item-link" href="project.html#project">Aerobik sportowy &
+          cheerleaders</a>
+      </li>
+      <li class="navigation__item"><a class="navigation__item-link" href="about.html#projects">lekka atletyka</a></li>
+      <li class="navigation__item"><a class="navigation__item-link" href="#contact">tenis ziemny</a></li>
+      <li class="navigation__item"><a class="navigation__item-link" href="#contact">obozy</a></li>
+      <li class="navigation__item"><a class="navigation__item-link" href="#contact">kontakt</a></li>
+    </ul>
   </div>
 </body>
 

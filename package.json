@@ -45,5 +45,13 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgataS23/uks-wilga-commertial-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AgataS23/uks-wilga-commertial-project/issues"
+  },
+  "homepage": "https://github.com/AgataS23/uks-wilga-commertial-project#readme"
 }

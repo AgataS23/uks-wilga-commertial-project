@@ -1,14 +1,45 @@
 @import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Raleway:wght@300;700&display=swap');
 
+
+@import "_mixins";
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/navigation.scss";
+
+// body {
+//  font-family: 'Amatic SC', cursive;
+ 
+//  margin: 0 12%;
+//  box-shadow: .5rem .5rem 2.5rem #5c5c5c;
+// }
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
+    }
+
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
 
 body {
-  background: $color;
-  color: #fff;
-  font-size: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
