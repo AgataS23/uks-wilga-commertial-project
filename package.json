@@ -1,7 +1,7 @@
 {
-  "name": "webpack-starterkit",
+  "name": "uks-wilga-commertial-project",
   "version": "1.0.1",
-  "description": "Webpack starterkit",
+  "description": "uks-wilga webpage",
   "main": "index.js",
   "private": true,
   "scripts": {

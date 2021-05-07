@@ -2,7 +2,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  max-width: 1024px;
+  margin: 0 auto;
   background: $color-white;
   box-shadow: 0 0.2rem 0.2rem $color-dark-grey;
   z-index: 9999;
@@ -10,9 +12,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.2rem;
+  align-content: stretch;
+  // font-size: 1.2rem;
   font-weight: 700;
-  
+
   &__list {
     display: flex;
     align-items: center;
@@ -48,8 +51,8 @@
     width: 10rem;
     margin: 0.8rem;
   }
-  
-  @media only screen and (max-width: 981px) {
+
+  @media only screen and (max-width: 980px) {
     &__list {
       display: none;
       flex-direction: column;
@@ -64,7 +67,7 @@
       text-align: center;
       width: 50%;
       padding: 2.5rem;
-      border-bottom: 1px solid $color-white;
+      border-bottom: 1px solid $color-dark-grey;
     }
     &__item:last-of-type {
       border-bottom: 0;
@@ -86,5 +89,13 @@
   }
 }
 
-
-
+@include respond(big-desktop) {
+  .navigation {
+    max-width: 1024px;
+    font-size: 0.8rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
