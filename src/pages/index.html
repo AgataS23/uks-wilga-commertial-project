@@ -23,112 +23,159 @@
 </head>
 
 <body>
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="navigation">
-      <img src="../assets/img/logo_male.svg" alt="Logo UKS WIlga" class="navigation__logo">
-      <button class="navigation__hamburger" id="hamburger">
-        <img src="../assets/icons/bars.svg" alt="hamburger menu icon bars" class="bars">
-        <img src="../assets/icons/close.svg" alt="hamburger menu icon close" class="close hide">
+  <section class="header">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="navigation">
+        <img src="../assets/img/logo_male.svg" alt="Logo UKS WIlga" class="navigation__logo">
+        <button class="navigation__hamburger" id="hamburger">
+          <img src="../assets/icons/bars.svg" alt="hamburger menu icon bars" class="bars">
+          <img src="../assets/icons/close.svg" alt="hamburger menu icon close" class="close hide">
+        </button>
+        <ul class="navigation__list" id="nav-ul">
+          <li class="navigation__item"><a class="navigation__item-link" href="#">o nas</a></li>
+          <li class="navigation__item"><a class="navigation__item-link" href="#">aktualności</a></li>
+          <li class="navigation__item"><a class="navigation__item-link" href="#">Pływanie</a></li>
+          <li class="navigation__item"><a class="navigation__item-link" href="#">Piłka nożna</a></li>
+          <li class="navigation__item"><a class="navigation__item-link" href="#">Aerobik sportowy &
+              cheerleaders</a>
+          </li>
+          <li class="navigation__item"><a class="navigation__item-link" href="#">lekka atletyka</a></li>
+          <li class="navigation__item"><a class="navigation__item-link" href="#">tenis ziemny</a></li>
+          <li class="navigation__item"><a class="navigation__item-link" href="#">obozy</a></li>
+          <li class="navigation__item"><a class="navigation__item-link" href="#">kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="carousel-indicators carousel__indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel__item active">
+          <img src="../assets/img/pływanie-karuzela-big.jpg" class="d-block w-100" alt="Widok basenu w szkole SP158.">
+          <div class="carousel-caption carousel__caption d-none d-md-block">
+            <h1 class="carousel__heading">Pływanie - nowość!</h1>
+            <p>Od września 2019 roku rozpoczęliśmy zajęcia w sekcji pływania. Po
+              piłce nożnej, aerobiku sportowym, siatkówce i tenisie ziemnym jest to kolejna odsłona zajęć jakie klub
+              proponuje dzieciom z naszej szkoły. Na lekcjach wychowania fizycznego […]
+            </p>
+            <button type="button" class="btn btn-light carousel__button">INFO</button>
+          </div>
+        </div>
+        <div class="carousel-item carousel__item">
+          <img src="../assets/img/piłka-karuzela-big.jpg" class="d-block w-100" alt="Chłopiec grający w piłkę nożną.">
+          <div class=" carousel-caption carousel__caption d-none d-md-block">
+            <h1 class="carousel__heading">PIŁKA NOŻNA</h1>
+            <p>AKADEMIA PIŁKARSKA – TRENUJ Z EKSTRA – KLASĄ - celem zajęć jest nauka podstawowych elementów techniki
+              piłki nożnej w formie gier i zabaw, kształtowanie koordynacji ruchowej młodego sportowca, nauka współpracy
+              w grupie; Inne atrakcje: udział w turniejach, możliwość wyjazdów na obozy […]</p>
+            <button type="button" class="btn btn-light carousel__button">INFO</button>
+          </div>
+        </div>
+        <div class="carousel-item carousel__item">
+          <img src="../assets/img/aerobik-karuzela-big.jpg" class="d-block w-100"
+            alt="Cheerleaderki na otwarcu basenu.">
+          <div class="carousel-caption carousel__caption d-none d-md-block">
+            <h1 class="carousel__heading">Aerobik sportowy & cheerleaders</h1>
+            <p>Celem zajęć jest rozwijanie koordynacji wzrokowo – ruchowo – słuchowej, przeprowadzanie różnorodnych
+              ćwiczeń wzmacniających mięśnie posturalne. Na zajęciach przekazywane są informacje dotyczące utrzymania
+              prawidłowej postawy ciała, czucia rytmu oraz elegancji poruszania się w tańcu Inne atrakcje : wspólne
+              nocowania w […]</p>
+            <button type="button" class="btn btn-light carousel__button">INFO</button>
+          </div>
+        </div>
+        <div class="carousel-item carousel__item">
+          <img src="../assets/img/atletyka-karuzela-big.jpg" class="d-block w-100"
+            alt="Zdjęcie przedstawiające zawodników przygotowujących się do staru biegu.">
+          <div class="carousel-caption carousel__caption d-none d-md-block">
+            <h1 class="carousel__heading">lekka atletyka</h1>
+            <p>UKS WILGA Kraków zaprasza uczniów klas 1-3 (grupa młodsza) oraz klasy 4-8 (grupa starsza) na zajęcia
+              sekcji lekkiej atletyki. Poniedziałek godz. 14.05- grupa młodsza kl. 2-3 Poniedziałek godz. 14.55 - grupa
+              młodsza kl. 1 Wtorek godz. 14.55 - grupa starsza kl. 4-8 […]</p>
+            <button type="button" class="btn btn-light carousel__button">INFO</button>
+          </div>
+        </div>
+        <div class="carousel-item carousel__item">
+          <img src="../assets/img/tenis-1.jpg" class="d-block w-100" alt="Dziecko siedzące na korcie tenisowym.">
+          <div class="carousel-caption carousel__caption d-none d-md-block">
+            <h1 class="carousel__heading">tenis ziemny</h1>
+            <p>Celem zajęć jest poznanie nowej dyscypliny sportowej jako ciekawej formy ruchu. Orientacja przestrzeni,
+              poszerzanie umiejętności koordynacji, szybkości, zwinności, obserwacji oraz koncentracji to cechy
+              niezbędne do treningu tenisa ziemnego Zajęcia prowadzone są przez trenera, posiadającego doświadczenie do
+              pracy z dziećmi […]</p> <button type="button" class="btn btn-light carousel__button">INFO</button>
+          </div>
+        </div>
+        <div class="carousel-item carousel__item">
+          <img src="../assets/img/obozy-karuzela-big.jpg" class="d-block w-100" alt="Grupa uczniów płynąca pontonem.">
+          <div class="carousel-caption carousel__caption d-none d-md-block">
+            <h1 class="carousel__heading">OBOZY LETNIE I ZIMOWE</h1>
+            <p>Zimą i latem wyjeżdżamy wspólnie, by w aktywny sposób zregenerować siły po
+              cołorocznych treningach. Organizacją obozów zajmujemy sie od 2003 roku, wszystkie zgłaszamy do MEN i
+              Kuratorium Oświaty. Każdy sezon to większa grupa zainteresowanych i zadowolonych […]
+            </p>
+            <button type="button" class="btn btn-light carousel__button">INFO</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <ul class="navigation__list" id="nav-ul">
-        <li class="navigation__item"><a class="navigation__item-link" href="#">o nas</a></li>
-        <li class="navigation__item"><a class="navigation__item-link" href="#">aktualności</a></li>
-        <li class="navigation__item"><a class="navigation__item-link" href="#">Pływanie</a></li>
-        <li class="navigation__item"><a class="navigation__item-link" href="#">Piłka nożna</a></li>
-        <li class="navigation__item"><a class="navigation__item-link" href="#">Aerobik sportowy &
-            cheerleaders</a>
-        </li>
-        <li class="navigation__item"><a class="navigation__item-link" href="#">lekka atletyka</a></li>
-        <li class="navigation__item"><a class="navigation__item-link" href="#">tenis ziemny</a></li>
-        <li class="navigation__item"><a class="navigation__item-link" href="#">obozy</a></li>
-        <li class="navigation__item"><a class="navigation__item-link" href="#">kontakt</a></li>
-      </ul>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="about">
+    <h2 class="about__heading">O nas</h2>
+    <div class="about__story">
+      <figure class="about__shape">
+        <img src="../assets/img/marcin.png" alt="Marcin Gędłek - prezes UKS Wilga" class="about__img">
+        <figcaption class="about__caption">Marcin Gędłek</figcaption>
+      </figure>
+      <div class="about__text">
+        <h3 class="about__heading-tertiary">Prezes UKS Wilga & trener</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat
+          quis consequatur
+          ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+          repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+        </p>
+      </div>
+    </div>
+    <div class="about__story">
+      <figure class="about__shape">
+        <img src="../assets/img/ewa.jpg" alt="Ewa winczura - Fekete - trener UKS Wilga" class="about__img">
+        <figcaption class="about__caption">Ewa Winczura-Fekete</figcaption>
+      </figure>
+      <div class="about__text">
+        <h3 class="about__heading-tertiary">Trener UKS Wilga</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat
+          quis consequatur
+          ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+          repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+        </p>
+      </div>
     </div>
 
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-        aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-        aria-label="Slide 5"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
-        aria-label="Slide 6"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../assets/img/pływanie-karuzela-big.jpg" class="d-block w-100" alt="Widok basenu w szkole SP158.">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Pływanie - nowość!</h5>
-          <p>Od września 2019 roku rozpoczęliśmy zajęcia w sekcji pływania. Po
-            piłce nożnej, aerobiku sportowym, siatkówce i tenisie ziemnym jest to kolejna odsłona zajęć jakie klub
-            proponuje dzieciom z naszej szkoły. Na lekcjach wychowania fizycznego […]
-          </p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="../assets/img/piłka-karuzela-big.jpg" class="d-block w-100" alt="Chłopiec grający w piłkę nożną.">
-        <div class=" carousel-caption d-none d-md-block">
-          <h5>PIŁKA NOŻNA</h5>
-          <p>AKADEMIA PIŁKARSKA – TRENUJ Z EKSTRA – KLASĄ&nbsp; Celem zajęć jest nauka podstawowych elementów techniki
-            piłki nożnej w formie gier i zabaw, kształtowanie koordynacji ruchowej młodego sportowca, nauka współpracy w
-            grupie; Inne atrakcje: udział w turniejach, możliwość wyjazdów na obozy […]</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="../assets/img/aerobik-karuzela-big.jpg" class="d-block w-100" alt="Cheerleaderki na otwarcu basenu.">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Aerobik sportowy & cheerleaders</h5>
-          <p>Celem zajęć jest rozwijanie koordynacji wzrokowo – ruchowo – słuchowej, przeprowadzanie różnorodnych
-            ćwiczeń wzmacniających mięśnie posturalne. Na zajęciach przekazywane są informacje dotyczące utrzymania
-            prawidłowej postawy ciała, czucia rytmu oraz elegancji poruszania się w&nbsp;tańcu Inne atrakcje : wspólne
-            nocowania w […]</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="../assets/img/atletyka-karuzela-big.jpg" class="d-block w-100"
-          alt="Zdjęcie przedstawiające zawodników przygotowujących się do staru biegu.">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>lekka atletyka</h5>
-          <p>UKS WILGA Kraków zaprasza uczniów klas 1-3 (grupa młodsza) oraz klasy 4-8 (grupa starsza) na zajęcia&nbsp;
-            sekcji lekkiej atletyki. Poniedziałek godz. 14.05- grupa młodsza kl.&nbsp; 2-3 Poniedziałek godz. 14.55-
-            grupa młodsza kl.&nbsp; 1 Wtorek godz. 14.55- grupa starsza kl.&nbsp; 4-8 […]</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="../assets/img/tenis-1.jpg" class="d-block w-100" alt="Dziecko siedzące na korcie tenisowym.">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>tenis ziemny</h5>
-          <p>Celem zajęć jest poznanie nowej dyscypliny sportowej jako ciekawej formy ruchu. Orientacja przestrzeni,
-            poszerzanie umiejętności koordynacji, szybkości, zwinności, obserwacji oraz koncentracji to cechy niezbędne
-            do treningu tenisa ziemnego Zajęcia prowadzone są przez trenera, posiadającego doświadczenie do pracy z
-            dziećmi […]</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="../assets/img/obozy-karuzela-big.jpg" class="d-block w-100" alt="Grupa uczniów płynąca pontonem.">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Obozy</h5>
-          <p>OBOZY LETNIE I ZIMOWE Zimą i latem wyjeżdżamy wspólnie, by w aktywny sposób zregenerować siły po
-            cołorocznych treningach Organizacją obozów zajmujemy sie od 2003 roku, wszystkie zgłaszamy do MEN i
-            Kuratorium Oświaty Każdy sezon to większa grupa zainteresowanych i zadowolonych […]</p>
+  </section>
+  <footer class="footer">
 
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </footer>
 
 
 

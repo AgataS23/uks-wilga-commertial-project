@@ -5,14 +5,10 @@
 @import "_mixins";
 @import "_variables";
 @import "modules/carousel.scss";
+@import "modules/about.scss";
 @import "modules/navigation.scss";
 
-// body {
-//  font-family: 'Amatic SC', cursive;
- 
-//  margin: 0 12%;
-//  box-shadow: .5rem .5rem 2.5rem #5c5c5c;
-// }
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -44,9 +40,4 @@ body {
   @include respond(tab-port) {
     padding: 0;
   }
-}
-.fale {
-  background: $color-main;
-  width: 1024px;
-  margin: 0 auto;
 }

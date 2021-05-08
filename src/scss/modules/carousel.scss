@@ -1,6 +1,46 @@
 .carousel {
   position: relative;
-  max-width: 1024px;
+  max-width: 102.4rem;
   margin: 46.61px auto 0 auto;
   box-shadow: 0.4rem -1rem 2rem 0.2rem $color-dark-grey;
+
+  &__indicators {
+    margin: 4rem 0;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__caption {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 0.12rem;
+    padding-bottom: 6rem;
+    position: absolute;
+    width: 30%;
+    bottom: 10%;
+    left: 60%;
+  }
+
+  &__heading {
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+  }
+  &__button {
+    color: $color-derker-grey;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+  }
+
 }
