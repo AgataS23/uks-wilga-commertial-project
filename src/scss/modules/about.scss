@@ -1,5 +1,5 @@
 .about {
-  max-width: 102.4rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 6rem 0 0;
   box-shadow: 0.4rem -1rem 2rem 0.2rem $color-dark-grey;
@@ -19,7 +19,9 @@
   }
 
   &__waves {
-    max-width: 102.4rem;
+    max-width: 120rem;
     width: 100%;
+    margin-bottom: -0.3rem;
+    border-bottom: 0.3rem solid $color-main;
   }
 }
