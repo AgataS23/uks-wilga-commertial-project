@@ -30,8 +30,6 @@
     border-top: 0.1rem solid $color-white;
     border-bottom: 0.1rem solid $color-white;
     list-style-type: none;
-
-    
   }
   &__item {
     padding: 1rem 1rem;
@@ -42,6 +40,9 @@
     display: inline-block;
     color: $color-white;
     text-decoration: none;
+  }
+  &__item-link:hover {
+    color: $color-derker-grey;
   }
 
   &__copyright {

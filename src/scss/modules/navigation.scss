@@ -33,6 +33,9 @@
     color: $color-derker-grey;
     text-decoration: none;
   }
+  &__item-link:hover {
+    color: $color-main;
+  }
 
   &__hamburger {
     background-color: transparent;
