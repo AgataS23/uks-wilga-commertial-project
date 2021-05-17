@@ -9,6 +9,18 @@
   font-size: $default-font-size;
   transform: skewX(-12deg);
 
+  @include respond(tab-port) {
+    width: 80%;
+    padding: 4rem 4rem 4rem 7rem;
+    
+  }
+
+  @include respond(phone) {
+    width: 75%;
+    // padding: -1rem;
+    transform: skewX(0);
+  }
+
   &__shape {
     width: 15rem;
     height: 15rem;
@@ -25,6 +37,11 @@
       shape-outside: circle(40% at 50% 50%);
       border-radius: none;
     }
+
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
+
   }
 
   &__img {
@@ -37,6 +54,10 @@
   &__text {
     transform: skewX(12deg);
     color: $color-white;
+
+    @include respond(phone) {
+      transform: skewX(0);
+    }
   }
 
   &__heading-tertiary {

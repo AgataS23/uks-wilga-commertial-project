@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-between;
   align-content: stretch;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
 
   &__list {
@@ -92,9 +92,7 @@
 
 @include respond(big-desktop) {
   .navigation {
-    max-width: 85.33rem;
-    font-size: 0.8rem;
-    margin: 0 auto;
+    max-width: 120rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
