@@ -1,0 +1,44 @@
+.composition {
+  width: 90%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__element {
+    position: relative;
+    width: 45%;
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  &__photo {
+    width: 90%;
+    margin: 3rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    border-radius: 0.2rem;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+
+    &:hover {
+      outline: 1.5rem solid $color-main;
+      transform: scale(1.08) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      z-index: 20;
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}

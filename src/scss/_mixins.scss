@@ -37,3 +37,13 @@ $breakpoint arguement choices:
     } //1800
   }
 }
+
+@mixin heading {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: $color-main;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  margin: 4rem auto;
+}
