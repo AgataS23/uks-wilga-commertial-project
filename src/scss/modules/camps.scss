@@ -2,10 +2,15 @@
   max-width: 120rem;
   width: 100%;
   margin: 4.661rem auto 0;
+  padding: 1rem 2rem;
   box-shadow: 0.4rem -1rem 2rem 0.2rem $color-dark-grey;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include respond(phone) {
+    width: 161%;
+  }
 
   &__waves {
     max-width: 120rem;
@@ -14,6 +19,11 @@
     margin-top: 1rem;
     border-bottom: 0.3rem solid $color-main;
     border-top: 1rem solid $color-white;
+
+    @include respond(phone) {
+      width: 108%;
+      margin-bottom: -1.2rem;
+    }
   }
 
   &__waves-top {
@@ -23,6 +33,10 @@
     margin-top: 0.2rem;
     border-bottom: 0.3rem solid $color-white;
     border-top: 1rem solid $color-main;
+    @include respond(phone) {
+      width: 108%;
+      margin-top: 1.4rem;
+    }
   }
 
   &__heading {
