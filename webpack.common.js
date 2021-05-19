@@ -104,5 +104,11 @@ module.exports = {
       chunks: ["index", "football"],
       filename: "football.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/swimming.html",
+      inject: true,
+      chunks: ["index", "swimming"],
+      filename: "swimming.html",
+    }),
   ],
 };

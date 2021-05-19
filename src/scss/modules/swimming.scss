@@ -1,0 +1,128 @@
+.swimming {
+  max-width: 120rem;
+  width: 100%;
+  margin: 4.661rem auto 0;
+  padding: 1rem 2rem;
+  box-shadow: 0.4rem -1rem 2rem 0.2rem $color-dark-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond(tab-land) {
+    width: 161%;
+  }
+  @include respond(phone) {
+    width: 161%;
+  }
+
+  &__waves {
+    max-width: 120rem;
+    width: 106%;
+    margin-bottom: -1.4rem;
+    margin-top: 1rem;
+    border-bottom: 0.3rem solid $color-main;
+    border-top: 1rem solid $color-white;
+
+    @include respond(tab-land) {
+      width: 104%;
+      margin-bottom: -1.3rem;
+    }
+    @include respond(phone) {
+      width: 105.2%;
+      margin-bottom: -1.3rem;
+    }
+    @media only screen and (max-width: 23.44em) {
+      width: 106.5%;
+      margin-bottom: -1.3rem;
+    }
+  }
+
+  &__waves-top {
+    max-width: 120rem;
+    width: 106%;
+    margin-bottom: 5rem;
+    margin-top: -0.8rem;
+    border-bottom: 0.3rem solid $color-white;
+    border-top: 1rem solid $color-main;
+
+    @include respond(tab-land) {
+      width: 103.7%;
+      margin-bottom: -1.2rem;
+      margin-top: 1.4rem;
+    }
+
+    @media only screen and (max-width: 74em) {
+      width: 106.5%;
+      margin-top: -0.8rem;
+    }
+
+    @include respond(tab-port) {
+      width: 103.7%;
+      margin-bottom: -1.2rem;
+      margin-top: 1.3rem;
+    }
+
+    @include respond(phone) {
+      width: 105.2%;
+      margin-top: 1.4rem;
+    }
+    @media only screen and (max-width: 23.44em) {
+      width: 106.5%;
+      margin-bottom: -1.3rem;
+    }
+  }
+
+  &__heading {
+    @include heading;
+  }
+  &__subheading {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-dark-grey;
+  }
+
+  &__list {
+    width: 80%;
+    list-style-type: none;
+    margin: 2rem 4rem 6rem;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    &--bold {
+      font-weight: bold;
+      color: $color-dark-grey;
+    }
+  }
+  // }
+  // &__item::marker {
+  //   color: $color-main;
+  // }
+
+  &__mail {
+    color: $color-main;
+  }
+
+  &__photo {
+    width: 40%;
+    margin: 3rem 3rem 6rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    border-radius: 0.2rem;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+
+    &:hover {
+      outline: 1.5rem solid $color-main;
+      transform: scale(1.08) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      z-index: 20;
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}
