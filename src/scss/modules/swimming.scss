@@ -95,6 +95,10 @@
       font-weight: bold;
       color: $color-dark-grey;
     }
+    &--underline {
+      border-bottom: 0.1rem solid $color-dark-grey;
+      width: 100%;
+    }
   }
   // }
   // &__item::marker {
@@ -103,6 +107,25 @@
 
   &__mail {
     color: $color-main;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__classes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__terms {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   &__photo {
@@ -124,5 +147,12 @@
 
   &:hover &__photo:not(:hover) {
     transform: scale(0.95);
+  }
+
+  &__link {
+    color: $color-main;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin: 4rem;
   }
 }
