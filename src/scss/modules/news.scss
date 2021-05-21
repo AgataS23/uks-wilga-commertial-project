@@ -178,8 +178,19 @@
 
   &__film {
     margin: 2rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
   }
   &__icon {
     width: 2rem;
+  }
+}
+.icons-info {
+  display: block;
+  margin: 1.2rem auto;
+  color: $color-white;
+  font-size: 1rem;
+
+  &__link {
+    color: $color-white;
   }
 }
