@@ -46,4 +46,14 @@
     margin: 0 auto;
     padding: 4rem 6rem;
   }
+
+  &__icons-info {
+    display: block;
+    margin: 1.2rem auto;
+    color: $color-white;
+    font-size: 1rem;
+  }
+  &__icons-link {
+    color: $color-white;
+  }
 }
