@@ -82,9 +82,9 @@
   }
 
   &__list {
-    width: 50%;
+    width: 45%;
     list-style-type: none;
-    margin: 2rem 4rem 6rem;
+    margin: 2rem auto 6rem;
     border-bottom: 0.1rem solid $color-dark-grey;
   }
 
@@ -109,6 +109,7 @@
   &__icon {
     width: 2rem;
     margin-right: 1rem;
+    color: $color-derker-grey;
   }
 
   &__photo {

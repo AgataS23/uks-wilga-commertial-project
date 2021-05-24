@@ -1,9 +1,9 @@
 .about {
-  max-width: 120rem;
-  width: 100%;
-  margin: 0 auto;
+  // max-width: 120rem;
+  // width: 100%;
+  // margin: 0 auto;
   padding: 6rem 0 0;
-  box-shadow: 0.4rem -1rem 2rem 0.2rem $color-dark-grey;
+  // box-shadow: 0.4rem -1rem 2rem 0.2rem $color-dark-grey;
 
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   overflow: hidden;
 
   @include respond(phone) {
-    width: 161%;
+    // width: 161%;
   }
 
   &__heading {
