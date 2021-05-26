@@ -1,12 +1,17 @@
-![cover](https://website-address/img/cover.png)
+![cover](https://AgtaS23.github.io/uks-wilga-commertial-project/cover.png)
 
-# Webpack Starter Kit
+# Agata Stoch - junior frontend developer
 
-Simple toolkit for your static websites development.
+This is my second commertial project. 
+<!-- You can find it here: [clik here](https://www.ukswilga.pl) -->
 
-## How to use it?
+## TOOLS
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+- Webpack starterkit
+- HTML + CSS + JS
+- BEM methodology
+- CSS Grid & Flexbox
+- Saas
 
 ## Available scripts
 
@@ -15,3 +20,4 @@ Click on `Use this template` button to generate a new repository based on this s
 `npm run build` - runs build process for production
 
 `npm run publish` - runs build process and publish the page using `gh-pages` branch
+
