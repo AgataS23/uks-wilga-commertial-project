@@ -21,8 +21,16 @@
     font-size: 1.6rem;
 
     @include respond(phone) {
-      font-size: 1.2rem;
-      bottom: 17%;
+      font-size: 0.7rem;
+      bottom: 24%;
+    }
+    &--cheerleaders2 {
+      bottom: 36%;
+
+      @include respond(phone) {
+        font-size: 0.7rem;
+        bottom: 42%;
+      }
     }
   }
 
@@ -35,11 +43,19 @@
     transition: all 0.2s;
     outline-offset: 2rem;
 
+    @include respond(phone) {
+      outline-offset: 0.5rem;
+    }
+
     &:hover {
       outline: 1.5rem solid $color-main;
       transform: scale(1.08) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       z-index: 20;
+
+      @include respond(phone) {
+        outline: 1rem solid $color-main;
+      }
     }
   }
 

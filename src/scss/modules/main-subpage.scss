@@ -1,7 +1,7 @@
 .main-subpage {
   max-width: 120rem;
   width: 100%;
-  margin: 4.661rem auto 0;
+  margin: 8.361rem auto 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -24,52 +24,87 @@
     max-width: 120rem;
     width: 100%;
     margin-bottom: 5rem;
-    margin-top: 0.1rem;
+    margin-top: -4.2rem;
     border-bottom: 0.3rem solid $color-white;
     border-top: 1rem solid $color-main;
 
     @include respond(tab-land) {
       margin-bottom: -1.2rem;
-      margin-top: 0.2rem;
+      margin-top: -4.2rem;
     }
 
-    @media only screen and (max-width: 74em) {
-      margin-top: 0.2rem;
-    }
-
-    @include respond(tab-port) {
-      margin-bottom: -1.2rem;
-      margin-top: 2.3rem;
+    @media only screen and (max-width: 64em) {
+      margin-top: -0.9rem;
     }
 
     @include respond(phone) {
-      margin-top: 2.4rem;
+      margin-top: -0.9rem;
     }
   }
 
   &__heading {
     @include heading;
+
+    @include respond(tab-land) {
+      font-size: 4.5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.5rem;
+    }
+    @include respond(phone) {
+      font-size: 2.5rem;
+      margin: 4rem 7%;
+    }
   }
 
   &__heading-small {
     font-family: "Amatic SC", cursive;
     font-weight: 700;
     font-size: 4rem;
+    line-height: 140%;
     text-transform: uppercase;
     color: $color-main;
     text-shadow: 0.1rem 0.1rem 0.2rem black;
-    margin: 4rem auto;
+    text-align: center;
+    width: 70%;
+    margin: 4rem 2rem;
+
+    @include respond(tab-land) {
+      font-size: 3.5rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
   }
   &__subheading {
     text-transform: uppercase;
     font-weight: bold;
     color: $color-dark-grey;
+    margin: 2rem;
+    @include respond(phone) {
+      margin: 2rem 9%;
+    }
   }
 
   &__list {
-    width: 80%;
+    width: 70%;
     list-style-type: none;
-    margin: 2rem 4rem 6rem;
+    margin: 2rem auto 6rem;
+
+    &--contact-main {
+      width: 40%;
+    }
+    &--contact {
+      width: 40%;
+    }
+    &--terms {
+      width: 50%;
+    }
   }
 
   &__item {
@@ -82,41 +117,23 @@
     }
     &--underline {
       border-bottom: 0.1rem solid $color-dark-grey;
+      padding-bottom: 2rem;
       width: 100%;
     }
+  }
+
+  &__sublist {
+    margin: 2rem 4rem;
   }
 
   &__mail {
     color: $color-main;
   }
 
-  &__container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  &__classes {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
-  &__terms {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   &__photo-info {
     width: 70%;
     margin: 3rem 3rem 6rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
-    border-radius: 0.2rem;
-    z-index: 10;
-    transition: all 0.2s;
-    outline-offset: 2rem;
   }
 
   &__photo {
@@ -128,11 +145,19 @@
     transition: all 0.2s;
     outline-offset: 2rem;
 
+    @include respond(phone) {
+      outline-offset: 0.5rem;
+    }
+
     &:hover {
       outline: 1.5rem solid $color-main;
       transform: scale(1.08) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       z-index: 20;
+
+      @include respond(phone) {
+        outline: 1rem solid $color-main;
+      }
     }
   }
 
@@ -153,5 +178,17 @@
   }
   &__icon {
     width: 2rem;
+    margin-right: 1rem;
+    margin-bottom: -0.3rem;
+
+    &--facebook {
+      width: 2rem;
+      margin-right: 1rem;
+      margin-bottom: -0.3rem;
+    }
+
+    &--facebook:hover {
+      background: $color-main;
+    }
   }
 }
