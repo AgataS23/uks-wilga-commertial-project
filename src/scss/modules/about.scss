@@ -1,20 +1,17 @@
 .about {
   padding: 6rem 0 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include section-flex-column;
   overflow: hidden;
 
   &__heading {
     @include heading;
+    color: $color-main;
+    font-size: 5rem;
+    margin: 4rem auto;
   }
 
   &__waves {
-    max-width: 120rem;
-    width: 100%;
-    margin-bottom: -0.4rem;
-    margin-top: 1rem;
-    border-bottom: 0.3rem solid $color-main;
-    border-top: 1rem solid $color-white;
+    @include waves-bottom;
+    margin: 1rem -0.2rem -0.3rem;
   }
 }

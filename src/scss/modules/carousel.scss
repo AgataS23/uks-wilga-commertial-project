@@ -39,11 +39,8 @@
   }
 
   &__heading {
-    font-family: "Amatic SC", cursive;
-    font-weight: 700;
+    @include heading;
     font-size: 5rem;
-    text-transform: uppercase;
-    text-shadow: 0.1rem 0.1rem 0.2rem black;
 
     @include respond(phone) {
       font-size: 3rem;
@@ -51,21 +48,21 @@
     }
   }
 
-  &__button {
-    color: $color-derker-grey;
-    font-family: "Raleway";
-    font-weight: bold;
-    font-size: 1.6rem;
-    line-height: 2rem;
-    padding: 1rem 4rem;
-    border-radius: 2rem;
-  }
+  // &__button {
+  //   color: $color-derker-grey;
+  //   font-family: "Raleway";
+  //   font-weight: bold;
+  //   font-size: 1.6rem;
+  //   line-height: 2rem;
+  //   padding: 1rem 4rem;
+  //   border-radius: 2rem;
+  // }
 
   &__waves-white {
     max-width: 120rem;
     width: 100%;
     display: block;
-    margin: 2rem -1rem 0.7rem;
+    margin: 2rem -1.5rem 0.7rem;
     z-index: 1000;
   }
 }
